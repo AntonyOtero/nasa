@@ -3,7 +3,7 @@
 @import url("/stylesheets/queries.css");
 
 body {
-  margin: 0;
+  margin: 0 50px;
   color: #203a8f;
   font-family: 'Montserrat', sans-serif;
   background: #eee;
@@ -12,7 +12,7 @@ body {
 /* HEADER */
 
 header {
-  padding: 60px 64px 0;
+  padding: 60px 0 40px;
   position: relative;
 }
 
@@ -33,4 +33,45 @@ header nav a {
   font-size: 24px;
   line-height: 1.5;
   text-decoration: none;
+}
+
+/* GALLERY */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 25px;
+}
+
+.gallery img {
+  max-height: 300px;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo .overlay {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #203a8f;
+  opacity: 0;
+}
+
+.photo .overlay:hover {
+  opacity: 85%;
+}
+
+.photo h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
 }

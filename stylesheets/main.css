@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url("/stylesheets/utilities.css");
-@import url("/stylesheets/queries.css");
 
 body {
-  margin: 0 50px;
+  padding: 0 50px;
   color: #203a8f;
   font-family: 'Montserrat', sans-serif;
   background: #eee;

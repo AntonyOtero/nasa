@@ -1,9 +1,26 @@
 @media screen and (max-width: 700px) {
   
+  body {
+    padding: 20px 10px;
+  }
+
   /* HEADER */
-  
+
   header .logo {
     max-width: 48px;
+  }
+
+  /* GALLERY */
+
+  .gallery img {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .photo .overlay {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 4px);
   }
 
 }
